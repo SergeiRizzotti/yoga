@@ -1,16 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>YOGA</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__nav-left">
+            <div class="header__nav-left_item nav-item">
+              <a href="#about">About us</a>
+            </div>
+            <div class="header__nav-left_item nav-item">
+              <a href="#head-content">Reservation</a>
+            </div>
+            <div class="header__nav-left_item nav-item">
+              <a href="#gallery">Gallery</a>
+            </div>
+          </div>
+          <div class="header__logo">
+            <a href="#">
+              <img src="./img/header-logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="header__nav-right">
+            <div class="header__nav-right_item nav-item">
+              <a href="#blog">Blog</a>
+            </div>
+            <div class="header__nav-right_item nav-item">
+              <a href="#elements">Elements</a>
+            </div>
+            <div class="header__nav-right_item nav-item">
+              <a href="#shop">Shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="head-content" id="head-content">
+      <div class="head-content__bg">
+        <div class="head-content__inner">
+          <div class="head-content__form">
+            <div class="head-content__form_title">
+              Trial Class
+            </div>
+            <form class="form" id="form">
+              <div class="form-control">
+                <input
+                  id="form__name"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  autocomplete="off"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <input
+                  type="text"
+                  name="phone"
+                  id="form__phone"
+                  placeholder="Enter your phone"
+                  autocomplete="off"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="form-control">
+                <select
+                  class="head-content__custom-select"
+                  required
+                  id="custom-select"
+                >
+                  <option
+                    label="Chose your class"
+                    value=""
+                    selected
+                    disabled
+                    hidden
+                  ></option>
+                  <option value="Yoga For Health">Yoga For Health</option>
+                  <option value="Yoga For Lose Weight"
+                    >Yoga For Lose Weight</option
+                  >
+                  <option value="Yoga For Children">Yoga For Children</option>
+                  <option value="Yoga For Elderly">Yoga For Elderly </option>
+                </select>
+                <small class="select-message">fffffffff</small>
+              </div>
+              <button
+                class="head-content__form_submit"
+                id="form_submit"
+                type="submit"
+              >
+                Try it
+              </button>
+            </form>
+          </div>
+          <div class="head-content__text">
+            <div class="head-content__text_title">
+              Just Balance<br />
+              your Mind & Body
+            </div>
+            <div class="head-content__text_subtitle">
+              Create the healthy living<br />
+              for yourself
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="program">
+      <div class="container">
+        <div class="program__text-inner">
+          <div class="program__text_title">
+            Yoga FEATURE PROGRAM
+          </div>
+          <div class="program__text_subtitle">
+            Our Classes
+          </div>
+        </div>
+        <div class="program__items">
+          <div class="program__item">
+            <div class="program__item_img">
+              <img src="./img/program/program-01.jpg" alt="" />
+            </div>
+            <div class="program__item_text-content">
+              <div class="program__item_title">
+                Yoga For Health
+              </div>
+              <div class="program__item_text">
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </div>
+              <div class="program__item_author">Ashtanga - Hatha</div>
+            </div>
+          </div>
+          <div class="program__item">
+            <div class="program__item_img">
+              <img src="./img/program/program-02.jpg" alt="" />
+            </div>
+            <div class="program__item_text-content">
+              <div class="program__item_title">
+                Yoga For Lose Weight
+              </div>
+              <div class="program__item_text">
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </div>
+              <div class="program__item_author">Ashtanga - Hatha</div>
+            </div>
+          </div>
+          <div class="program__item">
+            <div class="program__item_img">
+              <img src="./img/program/program-03.jpg" alt="" />
+            </div>
+            <div class="program__item_text-content">
+              <div class="program__item_title">
+                Yoga For Children
+              </div>
+              <div class="program__item_text">
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </div>
+              <div class="program__item_author">Ashtanga - Hatha</div>
+            </div>
+          </div>
+          <div class="program__item">
+            <div class="program__item_img">
+              <img src="./img/program/program-04.jpg" alt="" />
+            </div>
+            <div class="program__item_text-content">
+              <div class="program__item_title">
+                Yoga For Elderly
+              </div>
+              <div class="program__item_text">
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </div>
+              <div class="program__item_author">Ashtanga - Hatha</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="gallery__items">
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content">
+            <div class="about__content-title">
+              About us
+            </div>
+            <div class="about__content-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor it in lorei voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur lorem ispum loting sokui.
+            </div>
+          </div>
+          <div class="about__img">
+            <div class="about__slider">
+              <div class="about__slider-item slider-item">
+                <img src="./img/gallery/gallery-03.jpg" alt="" />
+              </div>
+              <div class="about__slider-item slider-item">
+                <img src="./img/gallery/gallery-02.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="elements">
+      <div class="elements__bg">
+        <div class="container">
+          <div class="elements__inner">
+            <div id="elements"></div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/01-heart-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                IMPROVED OVERALL HEALTH
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/02-eye-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                INCREASED CONCENTRATION
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/03-body-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                BLANCE YOUR MIND
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/04-sleep-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                SLEEP<br />
+                BETTER
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/05-excess-weight-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                WEIGHT<br />
+                LOSS
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/06-bones-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                STRENGTHENS YOUR BONES
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/07-callisthenics-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                INCREASED FLEXIBILITY
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+            <div class="elements__item">
+              <div class="elements__item_icon">
+                <img src="./img/icon/08-blood-pressure-icon.png" alt="heart" />
+              </div>
+              <div class="elements__item_title">
+                LOWER BLOOD PRESSURE
+              </div>
+              <div class="elements__item_text">
+                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                laboris nisi ut aliquip ex ea com.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shop" id="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop__item">
+            <div class="shop__item_price">
+              <span>$ </span>49<span> / month</span>
+            </div>
+            <div class="shop__item_conditions">
+              <div class="shop__item_date --line">
+                ENTRY DATE: MON – FRI
+              </div>
+              <div class="shop__item_time --line">
+                ENTRY TIME: 8A.M – 8P.M
+              </div>
+              <div class="shop__item_advicer">
+                NUTRITION ADVICER: NO
+              </div>
+              <button class="shop__item_btn">Buy now</button>
+            </div>
+          </div>
+          <div class="shop__item">
+            <div class="shop__item_price">
+              <span>$ </span>69<span> / month</span>
+            </div>
+            <div class="shop__item_conditions">
+              <div class="shop__item_date --line">
+                ENTRY DATE: MON – FRI
+              </div>
+              <div class="shop__item_time --line">
+                ENTRY TIME: 8A.M – 8P.M
+              </div>
+              <div class="shop__item_advicer">
+                NUTRITION ADVICER: YES
+              </div>
+              <button class="shop__item_btn">Buy now</button>
+            </div>
+          </div>
+          <div class="shop__item">
+            <div class="shop__item_price">
+              <span>$ </span>99<span> / month</span>
+            </div>
+            <div class="shop__item_conditions">
+              <div class="shop__item_date --line">
+                ENTRY DATE: MON – SUN
+              </div>
+              <div class="shop__item_time --line">
+                ENTRY TIME: 8A.M – 8P.M
+              </div>
+              <div class="shop__item_advicer">
+                NUTRITION ADVICER: YES
+              </div>
+              <button class="shop__item_btn">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+      <section class="blog" id="blog">
+        <div class="blog__bg">
+          <div class="container">
+            <div class="blog__inner">
+              <div class="blog__slider">
+                <div class="blog__slider_item">
+                  <div class="blog__slider_item-content">
+                    <div class="item-content__img">
+                      <img src="./img/blog/01-img.png" alt="" />
+                    </div>
+                    <div class="item-content_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                      consequat.
+                      <div class="item-content__position">
+                        Trainer
+                      </div>
+                      <div class="item-content__author">
+                        Laura Shepard
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="blog__slider_item">
+                  <div class="blog__slider_item-content">
+                    <div class="item-content__img">
+                      <img src="./img/blog/02-img.png" alt="" />
+                    </div>
+                    <div class="item-content_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                      consequat.
+                      <div class="item-content__position">
+                        Trainer
+                      </div>
+                      <div class="item-content__author">
+                        Sara Taylor
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__slider_item">
+                  <div class="blog__slider_item-content">
+                    <div class="item-content__img">
+                      <img src="./img/blog/03-img.png" alt="" />
+                    </div>
+                    <div class="item-content_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                      consequat.
+                      <div class="item-content__position">
+                        Trainer
+                      </div>
+                      <div class="item-content__author">
+                        Olivia Smith
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__slider_item">
+                  <div class="blog__slider_item-content">
+                    <div class="item-content__img">
+                      <img src="./img/blog/04-img.png" alt="" />
+                    </div>
+                    <div class="item-content_text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                      consequat.
+                      <div class="item-content__position">
+                        Trainer
+                      </div>
+                      <div class="item-content__author">
+                        Amelia King
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="slider-next-foto">
+                <div class="slider-next-foto__item">
+                  <div class="slider-next-foto__item_inner">
+                    <div class="slider-next-foto__item_img">
+                      <img src="./img/blog/02-next-foto.png" alt="" />
+                    </div>
+                    <div class="slider-next-foto__item_text">
+                      <div class="item_text-author">
+                        Sara Taylor
+                      </div>
+                      <div class="item_text-position">
+                        Trainer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-next-foto__item">
+                  <div class="slider-next-foto__item_inner">
+                    <div class="slider-next-foto__item_img">
+                      <img src="./img/blog/03-next-foto.png" alt="" />
+                    </div>
+                    <div class="slider-next-foto__item_text">
+                      <div class="item_text-author">
+                        Olivia Smith
+                      </div>
+                      <div class="item_text-position">
+                        Trainer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-next-foto__item">
+                  <div class="slider-next-foto__item_inner">
+                    <div class="slider-next-foto__item_img">
+                      <img src="./img/blog/04-next-foto.png" alt="" />
+                    </div>
+                    <div class="slider-next-foto__item_text">
+                      <div class="item_text-author">
+                        Amelia King
+                      </div>
+                      <div class="item_text-position">
+                        Trainer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-next-foto__item">
+                  <div class="slider-next-foto__item_inner">
+                    <div class="slider-next-foto__item_img">
+                      <img src="./img/blog/01-next-foto.png" alt="" />
+                    </div>
+                    <div class="slider-next-foto__item_text">
+                      <div class="item_text-author">
+                        Laura Shepard
+                      </div>
+                      <div class="item_text-position">
+                        Trainer
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer-top">
+      <div class="container">
+        <div class="footer-top__inner">
+          <div class="footer-top__about">
+            <div class="footer-top__about_title">
+              About
+            </div>
+            <div class="footer-top__about_text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad m inim veniam, quis nostrud exercitation toui ullamcomi
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="footer-top__about_social">
+              <a href="#">
+                <img src="./img/social-icon/01-pinterest.png" alt="pinterest" />
+              </a>
+              <a href="#">
+                <img src="./img/social-icon/02-twitter.png" alt="twitter" />
+              </a>
+              <a href="#">
+                <img src="./img/social-icon/03-facebook.png" alt="facebook" />
+              </a>
+              <a href="#">
+                <img src="./img/social-icon/04-google.png" alt="google" />
+              </a>
+              <a href="#">
+                <img src="./img/social-icon/05-instagram.png" alt="instagram" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-top__contact">
+            <div class="footer-top__contact_title">
+              CONTACT US
+            </div>
+            <div class="footer-top__item-inner">
+              <div class="row">
+                <div class="footer-top__contact_address">
+                  <a href="https://goo.gl/maps/z3tLSTqZ7kjQbFoBA"
+                    >5419 Joseph Mountains <br />
+                    Apt. 716</a
+                  >
+                </div>
+                <div class="footer-top__contact_phone">
+                  <a href="tel:+123456789">+1 234 567 89</a>
+                  <br />
+                  <a href="tel:+123467890">+1 234 678 90</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="footer-top__contact_mail">
+                  <a href="mailto:joga.info@example.com"
+                    >joga.info@example.com</a
+                  >
+                </div>
+                <div class="footer-top__contact_site">
+                  <a href="https://example.com">www.example.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__copyright">
+          Copyright © 2016-2017 Yoga classes
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
