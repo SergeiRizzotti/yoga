@@ -6,9 +6,9 @@ $(function () {
     speed: 300,
     slidesToShow: 1,
     prevArrow:
-      '<img class="slider-arrows slider-arrows__left" src="../img/bt-arrow-prew.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__left" src="./img/bt-arrow-prew.svg" alt="">',
     nextArrow:
-      '<img class="slider-arrows slider-arrows__right" src="../img/bt-arrow-next.svg" alt="">',
+      '<img class="slider-arrows slider-arrows__right" src="./img/bt-arrow-next.svg" alt="">',
   });
 
   $('.blog__slider').slick({
@@ -20,7 +20,7 @@ $(function () {
     arrows: false,
     asNavFor: '.slider-next-foto',
     customPaging: function () {
-      return '<img src="../img/slide-dot.png" /><img src="../img/slide-dot-active.png" />';
+      return '<img src="./img/slide-dot.png" /><img src="./img/slide-dot-active.png" />';
     },
     responsive: [
       {
@@ -38,9 +38,9 @@ $(function () {
     slidesToScroll: 1,
     asNavFor: '.blog__slider',
     prevArrow:
-      '<img class="slider-next-foto__arrows slider-next-foto-arrows__left" src="../img/bt-arrow-prew.svg" alt="">',
+      '<img class="slider-next-foto__arrows slider-next-foto-arrows__left" src="./img/bt-arrow-prew.svg" alt="">',
     nextArrow:
-      '<img class="slider-next-foto__arrows slider-next-foto-arrows__right" src="../img/bt-arrow-next.svg" alt="">',
+      '<img class="slider-next-foto__arrows slider-next-foto-arrows__right" src="./img/bt-arrow-next.svg" alt="">',
   });
 
   jQuery(window).scroll(function () {
