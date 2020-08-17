@@ -15,6 +15,13 @@
     <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
+          <div class="menu-btn" id="menu-btn">
+            <div class="menu-btn__inner">
+              <div class="menu-btn__line"></div>
+              <div class="menu-btn__line width-smoll"></div>
+              <div class="menu-btn__line"></div>
+            </div>
+          </div>
           <div class="header__nav-left">
             <div class="header__nav-left_item nav-item">
               <a href="#about">About us</a>
@@ -42,6 +49,28 @@
               <a href="#shop">Shop</a>
             </div>
           </div>
+          <nav class="menu" id="menu">
+            <ul class="menu__list">
+              <li class="nav-item">
+                <a href="#about"><span>About us</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#head-content"><span>Reservation</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#gallery"><span>Gallery</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog"><span>Blog</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#elements"><span>Elements</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#shop"><span>Shop</span></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -95,7 +124,7 @@
                   <option value="Yoga For Children">Yoga For Children</option>
                   <option value="Yoga For Elderly">Yoga For Elderly </option>
                 </select>
-                <small class="select-message">fffffffff</small>
+                <small class="select-message"></small>
               </div>
               <button
                 class="head-content__form_submit"
@@ -200,7 +229,11 @@
     <section class="gallery" id="gallery">
       <div class="gallery__items">
         <div class="gallery__item">
-          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <img src="./img/gallery/gallery-01.jpg" class="wide" alt="" />
+          <div class="gallery__item_img-magnifer"></div>
+        </div>
+        <div class="gallery__item">
+          <img src="./img/gallery/gallery-02.jpg" class="wide" alt="" />
           <div class="gallery__item_img-magnifer"></div>
         </div>
         <div class="gallery__item">
@@ -208,27 +241,23 @@
           <div class="gallery__item_img-magnifer"></div>
         </div>
         <div class="gallery__item">
-          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <img src="./img/gallery/gallery-04.jpg" class="wide" alt="" />
           <div class="gallery__item_img-magnifer"></div>
         </div>
         <div class="gallery__item">
-          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <img src="./img/gallery/gallery-05.jpg" class="wide" alt="" />
           <div class="gallery__item_img-magnifer"></div>
         </div>
         <div class="gallery__item">
-          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <img src="./img/gallery/gallery-06.jpg" class="wide" alt="" />
           <div class="gallery__item_img-magnifer"></div>
         </div>
         <div class="gallery__item">
-          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <img src="./img/gallery/gallery-07.jpg" class="wide" alt="" />
           <div class="gallery__item_img-magnifer"></div>
         </div>
         <div class="gallery__item">
-          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
-          <div class="gallery__item_img-magnifer"></div>
-        </div>
-        <div class="gallery__item">
-          <img src="./img/gallery/gallery-03.jpg" class="wide" alt="" />
+          <img src="./img/gallery/gallery-08.jpg" class="wide" alt="" />
           <div class="gallery__item_img-magnifer"></div>
         </div>
       </div>
@@ -262,11 +291,10 @@
         </div>
       </div>
     </section>
-    <section class="elements">
+    <section class="elements" id="elements">
       <div class="elements__bg">
         <div class="container">
           <div class="elements__inner">
-            <div id="elements"></div>
             <div class="elements__item">
               <div class="elements__item_icon">
                 <img src="./img/icon/01-heart-icon.png" alt="heart" />
@@ -425,7 +453,6 @@
           </div>
         </div>
       </div>
-
       <section class="blog" id="blog">
         <div class="blog__bg">
           <div class="container">

@@ -17,7 +17,7 @@
     padding: 0;
     transition: 0.4s cubic-bezier(0.56, 0.38, 0.13, 0.99);
 
-    .header__logo {
+    .header__logo img {
       transition: 0.3s;
       transform: scale(0.7);
     }
@@ -27,6 +27,34 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  .menu-btn {
+    display: none;
+    position: absolute;
+    right: 36px;
+    top: 44px;
+    z-index: 2005;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+
+    &__inner {
+      width: 40px;
+    }
+
+    &__line {
+      height: 3px;
+      background-color: #555555;
+      border-radius: 2px;
+
+      + .menu-btn__line {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .menu {
+    display: none;
   }
 
   &__nav-left {
@@ -71,6 +99,7 @@
     min-height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__inner {
@@ -236,6 +265,8 @@
       margin-top: 30px;
       width: 70%;
       align-self: flex-end;
+      white-space: nowrap;
+
       &:hover {
         background-color: #475bf1;
       }
@@ -304,8 +335,8 @@
 
   &__item {
     display: flex;
-    max-width: 570px;
-    max-height: 300px;
+    max-width: 550px;
+    min-height: 300px;
     border-radius: 8px;
     box-shadow: 3.5px 3.5px 20px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 25px;
@@ -313,10 +344,15 @@
 
     &_img img {
       display: block;
+      border-radius: 8px 0 0 8px;
     }
 
     &_text-content {
-      padding: 50px 30px;
+      padding: 10px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-evenly;
     }
 
     &_title {
@@ -347,7 +383,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: fit-content(50%);
-    grid-auto-flow: dense;
+    grid-auto-flow: row;
     align-items: stretch;
     justify-items: center;
     margin: 0;
@@ -449,12 +485,13 @@
     min-height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__inner {
     padding: 50px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
@@ -463,9 +500,11 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 235px;
 
     &_title {
-      margin-top: 34px;
       max-width: 179px;
       font-size: 18px;
       font-weight: bold;
@@ -475,8 +514,7 @@
     }
 
     &_text {
-      margin-top: 25px;
-      max-width: 265px;
+      max-width: 275px;
       font-size: 16px;
       line-height: 1.69;
       text-align: center;
@@ -495,6 +533,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -502,6 +541,7 @@
     border-radius: 20px;
     box-shadow: 6.4px 6.4px 50px 0 rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    margin-top: 30px;
 
     &_price {
       padding: 50px 60px;
@@ -540,6 +580,7 @@
       text-align: left;
       color: #555555;
       text-transform: uppercase;
+      white-space: nowrap;
 
       .--line::after {
         content: '';
@@ -557,10 +598,12 @@
       margin-bottom: 20px;
       position: relative;
       padding-bottom: 20px;
+      white-space: nowrap;
     }
 
     &_advicer {
       margin-bottom: 50px;
+      white-space: nowrap;
     }
 
     &_btn {
@@ -572,6 +615,7 @@
       padding: 17px 40px;
       align-self: center;
       outline: none;
+      white-space: nowrap;
 
       &:hover {
         background-color: #475bf1;
@@ -592,6 +636,7 @@
     &_item {
       background-color: #fff;
       padding: 50px;
+      border-radius: 8px;
     }
 
     &_item-content {
@@ -768,6 +813,7 @@
       font-weight: bold;
       line-height: 1.22;
       color: #fff;
+      text-transform: uppercase;
     }
 
     &_text {
@@ -797,6 +843,7 @@
       font-weight: bold;
       line-height: 1.22;
       color: #fff;
+      text-transform: uppercase;
     }
 
     &_address,
@@ -832,6 +879,7 @@
     }
 
     &_phone {
+      white-space: nowrap;
       &::before {
         content: url(../img/icon/phone.png);
         top: 6px;

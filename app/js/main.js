@@ -19,9 +19,15 @@ $(function () {
     dots: true,
     arrows: false,
     asNavFor: '.slider-next-foto',
-    customPaging: function (slider, i) {
+    customPaging: function () {
       return '<img src="../img/slide-dot.png" /><img src="../img/slide-dot-active.png" />';
     },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {},
+      },
+    ],
   });
 
   $('.slider-next-foto').slick({
@@ -60,11 +66,9 @@ $(function () {
     $('body,html').animate({scrollTop: top}, 800);
   });
 
-  $(document).ready(function () {
-    $('.head-content__custom-select').select2({
-      placeholder: 'Chose your class',
-      width: '100%',
-    });
+  $('.head-content__custom-select').select2({
+    placeholder: 'Chose your class',
+    width: '100%',
   });
 });
 
@@ -86,11 +90,13 @@ const userPhone = document.getElementById('form__phone');
 const customSelect = document.getElementById('custom-select');
 const btnFormSubmit = document.getElementById('form_submit');
 
-btnFormSubmit.addEventListener('click', (e) => {
-  e.preventDefault();
+if (btnFormSubmit) {
+  btnFormSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
 
-  checkInput();
-});
+    checkInput();
+  });
+}
 
 function checkInput() {
   const userNameValue = userName.value.trim();
@@ -133,3 +139,24 @@ function setSuccessFor(input) {
 function isPhone(phoneNumber) {
   return /^\+380\d{3}\d{2}\d{2}\d{2}$/.test(phoneNumber);
 }
+
+// Active toogle menu
+const menu = document.getElementById('menu');
+const menuBtn = document.getElementById('menu-btn');
+
+menuBtn.addEventListener('click', () => {
+  if (menu.classList.value === 'menu') {
+    menu.className = 'menu active';
+    menuBtn.classList = 'menu-btn active';
+  } else {
+    menu.className = 'menu';
+    menuBtn.classList = 'menu-btn';
+  }
+});
+
+menu.addEventListener('click', () => {
+  if (menu.classList.value === 'menu active') {
+    menu.className = 'menu';
+    menuBtn.classList = 'menu-btn';
+  }
+});
